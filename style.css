@@ -1,0 +1,42 @@
+form {
+  text-align: center;
+  top: -10px;
+  padding: 20px;
+  display: block;
+}
+
+.container .card {
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.container .card-img {
+  padding: 20px;
+}
+
+.container .list-group {
+  display: inline;
+  font-family: "Nerko One", cursive;
+  font-size: 25px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-family: "Nerko One", cursive;
+  font-size: 40px;
+}
+
+.forecast-img {
+  width: 80px;
+  display: inline;
+  padding: 0px;
+}
+
+.row .col-2 {
+  position: relative;
+  text-align: center;
+  left: 90px;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
