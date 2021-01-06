@@ -1,3 +1,10 @@
+h1 {
+  text-align: left;
+  display: block;
+  font-family: "Nerko One", cursive;
+  font-size: 40px;
+}
+
 form {
   text-align: center;
   top: -10px;
@@ -16,12 +23,12 @@ form {
 }
 
 .container .list-group {
-  display: inline;
+  display: block;
   font-family: "Nerko One", cursive;
   font-size: 25px;
 }
 
-h1 {
+h2 {
   display: block;
   text-align: center;
   font-family: "Nerko One", cursive;
