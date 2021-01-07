@@ -10,7 +10,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Texturina:wght@200;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Texturina:wght@100;500&display=swap"
         rel="stylesheet">
 
 </head>
@@ -21,20 +21,24 @@
         <input type="button" placeholder="Location">
     </form>
     <div class="container">
-        <div class="card mb-3" style="max-width: 500px;">
+        <div class="card mb-3" style="max-width: 600px;">
             <h1>City name</h1>
-                <ul>
+                <ul class="daily-forecast"> 
                     <li>Time</li>
                     <li>Cloudy</li>
                 </ul>
                 <div class="row">
-                <div class="col-6">           
-                <img src="cloudy.PNG" class="card-img" alt="Cloudy"/>
-                16 °C/°F
+                <div class="col-6">
+                <div class="weather-temp">          
+                <img src="cloudy.PNG" class="float-left" alt="Cloudy"/>
+                <div class="float-left">
+                    <strong>17</strong><span class="units"> °C | °F</span>
+                </div>
+                </div>
                 </div>
                 <div class="col-6">
                     <div class="card-body">
-                        <ul class="addittional">
+                        <ul>
                             <li>Precipitation: 45%</li>
                             <li>Humidity: 73%</li>
                             <li>Wind: 2 km/h</li>

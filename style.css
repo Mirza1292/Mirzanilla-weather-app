@@ -1,8 +1,9 @@
 h1 {
   text-align: left;
   display: block;
-  font-family: "Nerko One", cursive;
-  font-size: 40px;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Texturina";
 }
 
 form {
@@ -15,16 +16,61 @@ form {
 .container .card {
   display: block;
   margin: 0 auto;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-}
-
-.container .card-img {
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+  margin: 30px auto;
   padding: 20px;
 }
 
+.weather-temp img {
+  padding: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.weather-temp strong {
+  font-size: 40px;
+  line-height: 19px;
+  font-weight: 250px;
+  position: relative;
+  top: 20px;
+}
+
+.weather-temp .units {
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+}
+
+.daily-forecast {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 22px;
+  font-family: "Texturina", thin;
+}
+
+.card-body {
+  margin-top: -20px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
+  font-family: "Texturina";
+}
 .container .list-group {
   display: block;
-  font-family: "Nerko One", cursive;
+  font-family: "Texturina", cursive;
   font-size: 25px;
 }
 
