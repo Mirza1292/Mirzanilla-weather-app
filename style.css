@@ -5,12 +5,30 @@ h1 {
   font-weight: lighter;
   font-family: "Texturina";
 }
+.location-forms input {
+  text-align: left;
+  margin: 12px auto;
+  font-family: "Arial";
+  font-size: small;
+}
 
-form {
-  text-align: center;
-  top: -10px;
-  padding: 20px;
-  display: block;
+.location-forms button {
+  width: 65px;
+  position: relative;
+  left: 90px;
+  background: lightskyblue;
+  padding: 8px;
+  box-shadow: cyan;
+}
+
+.location-forms img {
+  width: 30px;
+  position: relative;
+}
+
+.current-location-button-image {
+  width: 80px;
+  padding: 0px;
 }
 
 .container .card {

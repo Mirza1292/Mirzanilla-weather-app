@@ -12,16 +12,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Texturina:wght@100;500&display=swap"
         rel="stylesheet">
-
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-    <form>
-        <input type="text" placeholder="Enter city...">
-        <input type="button" placeholder="Location">
-    </form>
+    
     <div class="container">
         <div class="card mb-3" style="max-width: 600px;">
+            <form>
+                <div class="location-forms">
+                
+                <input type="text"
+                id="city-button"
+                placeholder="Enter a city"
+                autocomplete="off"
+                autofocus="on"/>
+
+                <input id="submit-button" type="submit" 
+                value="Search"/>
+
+                <button id="current-location-button">
+                    <img id="current-location-button-image" src="location.png"/>
+                </button>
+              </div>
+            </form>
             <h1>City name</h1>
                 <ul class="daily-forecast"> 
                     <li>Time</li>
