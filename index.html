@@ -19,7 +19,7 @@
 <body>
     
     <div class="container">
-        <div class="card-body" style="max-width: 590px;">
+        <div class="card-body" style="max-width: 650px;">
             <form>
                 <div class="location-forms">
                 
@@ -37,17 +37,17 @@
                 </button>
               </div>
             </form>
-            <h1>City name</h1>
+            <h1 id="city"></h1>
                 <ul class="daily-forecast"> 
                     <li>Time</li>
-                    <li>Cloudy</li>
+                    <li id="tempdescription"></li>
                 </ul>
                 <div class="row">
                 <div class="col-6">
                 <div class="weather-temp">          
                 <img src="cloudy.PNG" class="float-left" alt="Cloudy"/>
                 <div class="float-left">
-                    <strong>17</strong><span class="units"> °C | °F</span>
+                    <strong id="tempindicator"></strong><span class="units"> °C | °F</span>
                 </div>
                 </div>
                 </div>
@@ -55,8 +55,8 @@
                     <div class="card-detail">
                         <ul>
                             <li>Precipitation: 45%</li>
-                            <li>Humidity: 73%</li>
-                            <li>Wind: 2 km/h</li>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind:<span id="wind"></span> km/h</li>
                         </ul>
                     </div>
                 </div>

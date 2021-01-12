@@ -10,6 +10,7 @@
   font-family: "Orbitron";
   background-image: url("https://media.giphy.com/media/KDteAGZcv7LiehlTDm/giphy.gif");
   display: block;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -69,7 +70,7 @@ h2 {
 }
 
 .weather-temp strong {
-  font-size: 60px;
+  font-size: 35px;
   line-height: 19px;
   font-weight: 250px;
   position: relative;
