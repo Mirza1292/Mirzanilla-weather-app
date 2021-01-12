@@ -3,10 +3,11 @@
   padding: 10px;
   margin-top: 20px;
   list-style: none;
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 17px;
+  font-weight: 500;
   line-height: 19px;
-  font-family: "Texturina";
+  text-shadow: palevioletred;
+  font-family: "Orbitron";
   background-image: url("https://media.giphy.com/media/KDteAGZcv7LiehlTDm/giphy.gif");
   display: block;
 }
@@ -14,16 +15,16 @@
 h1 {
   text-align: left;
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: lighter;
-  font-family: "Texturina";
+  font-family: "Orbitron";
 }
 
 h2 {
   text-align: center;
   font-size: 13px;
   font-weight: lighter;
-  font-family: "Texturina";
+  font-family: "Orbitron";
 }
 
 .location-forms input {
@@ -31,14 +32,16 @@ h2 {
   margin: 12px auto;
   font-family: "Arial";
   font-size: small;
+  border-radius: 8px;
 }
 
 .location-forms button {
-  width: 65px;
+  width: 70px;
   position: relative;
   left: 125px;
   background: pink;
   padding: 8px;
+  border-radius: 8px;
 }
 
 .location-forms img {
@@ -66,7 +69,7 @@ h2 {
 }
 
 .weather-temp strong {
-  font-size: 40px;
+  font-size: 60px;
   line-height: 19px;
   font-weight: 250px;
   position: relative;
@@ -77,6 +80,7 @@ h2 {
   position: relative;
   font-size: 20px;
   top: 10px;
+  font-weight: 900;
 }
 
 .daily-forecast {
@@ -85,15 +89,16 @@ h2 {
   list-style: none;
   padding: 0;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 600;
   line-height: 22px;
-  font-family: "Texturina", thin;
+  font-family: "Orbitron", thin;
 }
 
 .container .list-group {
   display: block;
-  font-family: "Texturina", cursive;
+  font-family: "Orbitron";
   font-size: 25px;
+  font-weight: 800px;
 }
 
 .forecast-img {
