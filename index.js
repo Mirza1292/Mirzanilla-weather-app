@@ -57,7 +57,7 @@ function displayTemperature(response) {
     search(cityInputElement.value);
   }
   
-  search("New York");
+  search("Paris");
 
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
