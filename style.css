@@ -1,16 +1,19 @@
 .card-body {
   margin: auto;
-  padding: 10px;
+  padding: 8px;
   margin-top: 20px;
-  list-style: none;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 599;
   line-height: 19px;
   text-shadow: palevioletred;
   font-family: "Orbitron";
   background-image: url("https://media.giphy.com/media/KDteAGZcv7LiehlTDm/giphy.gif");
   display: block;
   text-transform: capitalize;
+}
+
+.card-body ul {
+  list-style-type: none;
 }
 
 h1 {
@@ -131,7 +134,4 @@ h2 {
 
 .weather-temperature .active:hover {
   text-decoration: none;
-}
-
-.weather-forecast {
 }
