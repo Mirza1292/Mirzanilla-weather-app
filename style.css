@@ -112,8 +112,14 @@ h2 {
   position: block;
   text-align: center;
   padding: auto;
+  font-size: 13px;
 }
 
+.row .col-2 h3 {
+  font-size: 17px;
+  font-family: "Orbitron";
+  margin-top: 20px;
+}
 .coded .coding {
   text-align: center;
 }
@@ -125,4 +131,7 @@ h2 {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
 }
