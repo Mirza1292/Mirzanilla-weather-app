@@ -123,9 +123,6 @@ h2 {
   font-family: "Orbitron";
   margin-top: 20px;
 }
-.coded .coding {
-  text-align: center;
-}
 
 .weather-temp .active {
   color: rgb(46, 28, 46);
@@ -134,4 +131,10 @@ h2 {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
 }
