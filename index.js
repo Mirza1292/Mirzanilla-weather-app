@@ -88,6 +88,7 @@ forecastElement.innerHTML += `
  `;
  }
 }
+
   function search(city) {
   let apiKey = "b975277a9f39c6c3209fa308608465fc";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -95,7 +96,6 @@ forecastElement.innerHTML += `
 
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
-
 
   }
 
@@ -133,5 +133,28 @@ forecastElement.innerHTML += `
 
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+function currentLocationShowTemperature(response) {
+  let city = response.data.name;
+  let temperature = Math.round(response.data.main.temp);
+  let cityElement = document.querySelector("#city");
+  let temperatureElement = document.querySelector("#tempindicator");
+  cityElement.innerHTML = `${city}`;
+  temperatureElement.innerHTML = `${temperature} °C`;
+}
+
+  function searchLocation(position) {
+    let apiKey = "b975277a9f39c6c3209fa308608465fc";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(currentLocationShowTemperature); 
+  }
+  
+  function getCurrentPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
+
+  let button = document.querySelector("#current-location-button");
+  button.addEventListener("click", getCurrentPosition);
 
   search("Querétaro");
