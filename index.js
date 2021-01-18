@@ -63,6 +63,7 @@ function displayTemperature(response) {
  
 function displayForecast(response) {
 let forecastElement = document.querySelector("#forecast");
+let currentLocationButton = document.querySelector("#current-location-button");
 forecastElement.innerHTML = null;
 let forecacast = null; 
 
@@ -146,7 +147,11 @@ function currentLocationShowTemperature(response) {
   function searchLocation(position) {
     let apiKey = "b975277a9f39c6c3209fa308608465fc";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(currentLocationShowTemperature); 
+    axios.get(apiUrl).then(currentLocationShowTemperature);
+    
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
+
   }
   
   function getCurrentPosition(event) {
@@ -157,4 +162,4 @@ function currentLocationShowTemperature(response) {
   let button = document.querySelector("#current-location-button");
   button.addEventListener("click", getCurrentPosition);
 
-  search("Querétaro");
+  search("New York");
