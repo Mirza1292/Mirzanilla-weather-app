@@ -141,7 +141,7 @@ function currentLocationShowTemperature(response) {
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#tempindicator");
   cityElement.innerHTML = `${city}`;
-  temperatureElement.innerHTML = `${temperature} °C`;
+  temperatureElement.innerHTML = `${temperature}`;
 }
 
   function searchLocation(position) {
